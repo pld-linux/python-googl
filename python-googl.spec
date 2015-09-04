@@ -9,7 +9,7 @@ Summary:	Python goo.gl url shortener wrapper
 Name:		python-%{module}
 Version:	0.2.2
 Release:	1
-License:	Unknown
+License:	MIT
 Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/p/python-googl/python-googl-%{version}.tar.gz
 # Source0-md5:	7be46ada5eaa87effa6380c43563b583
