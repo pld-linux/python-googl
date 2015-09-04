@@ -11,7 +11,7 @@ Version:	0.2.2
 Release:	1
 License:	Unknown
 Group:		Libraries/Python
-Source0:	https://pypi.python.org/packages/source/p/python-googl/python-googl-%{version}.tar.gz#md5=7be46ada5eaa87effa6380c43563b583
+Source0:	https://pypi.python.org/packages/source/p/python-googl/python-googl-%{version}.tar.gz
 # Source0-md5:	7be46ada5eaa87effa6380c43563b583
 URL:		https://pypi.python.org/pypi/python-googl
 BuildRequires:	rpm-pythonprov
@@ -87,9 +87,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %{py_sitescriptdir}/%{module}
-%if "%{py_ver}" > "2.4"
 %{py_sitescriptdir}/python_%{module}-%{version}-py*.egg-info
-%endif
 %endif
 
 %if %{with python3}
