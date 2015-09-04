@@ -45,11 +45,6 @@ Python goo.gl url shortener wrapper.
 %prep
 %setup -q
 
-# setup copy of source in py3 dir
-set -- *
-install -d py3
-cp -a "$@" py3
-
 %build
 %if %{with python2}
 %{__python} setup.py build --build-base build-2 %{?with_tests:test}
@@ -61,7 +56,6 @@ cp -a "$@" py3
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %if %{with python2}
 %{__python} setup.py \
 	build --build-base build-2 \
