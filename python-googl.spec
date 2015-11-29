@@ -15,7 +15,7 @@ Source0:	https://pypi.python.org/packages/source/p/python-googl/python-googl-%{v
 # Source0-md5:	7be46ada5eaa87effa6380c43563b583
 URL:		https://pypi.python.org/pypi/python-googl
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 %if %{with python2}
 BuildRequires:	python-httplib2
 BuildRequires:	python-setuptools >= 7.0
