@@ -5,7 +5,8 @@
 %bcond_without	python3 # CPython 3.x module
 
 %define 	module	googl
-Summary:	Python goo.gl url shortener wrapper
+Summary:	Python goo.gl URL shortener wrapper
+Summary(pl.UTF-8):	Pythonowe obudowanie narzędzia goo.gl do skracania URL-i
 Name:		python-%{module}
 Version:	0.2.2
 Release:	1
@@ -31,16 +32,23 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Python goo.gl url shortener wrapper.
+Python goo.gl URL shortener wrapper.
+
+%description -l pl.UTF-8
+Pythonowe obudowanie narzędzia goo.gl do skracania URL-i.
 
 %package -n python3-%{module}
-Summary:	Python goo.gl url shortener wrapper
+Summary:	Python goo.gl URL shortener wrapper
+Summary(pl.UTF-8):	Pythonowe obudowanie narzędzia goo.gl do skracania URL-i
 Group:		Libraries/Python
 Requires:	python3-httplib2
 Requires:	python3-modules
 
 %description -n python3-%{module}
-Python goo.gl url shortener wrapper.
+Python goo.gl URL shortener wrapper.
+
+%description -n python3-%{module} -l pl.UTF-8
+Pythonowe obudowanie narzędzia goo.gl do skracania URL-i.
 
 %prep
 %setup -q
